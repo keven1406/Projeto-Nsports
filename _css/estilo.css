@@ -1,0 +1,244 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* Estilos globais */
+body {
+	font-family: 'Roboto', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+/* Largura da página*/
+.container {
+	margin-left: auto;
+	margin-right: auto;
+}
+.tamanho {
+	width: 97%;
+}
+/* Cabeçalho */
+.cabecalho {
+	margin-bottom: 5px;
+}
+.div-cabecalho {
+	position: relative;
+	margin-top: 5px;
+}
+.cabecalho h1 {
+	text-align: center;
+}
+.cabecalho nav h1 {
+	font-size: 1.25em;
+	display: none;
+}
+.cabecalho nav ul {
+	text-transform: uppercase;
+}
+.cabecalho nav ul li {
+	display: inline-block;
+	margin: 5px;
+}
+.cabecalho nav ul li a {
+	color: black;
+}
+#menu {
+	background: url("../_imagens/_icones/menu2.png") left top;
+}
+/* Menu do Usuário */
+a[href*="fale-conosco.html"] {
+	background: url('../_imagens/_icones/contato.png') left top no-repeat;
+}
+a[href*="ajuda.html"] {
+	background: url('../_imagens/_icones/ajuda.png') left top no-repeat;
+}
+a[href*="login.html"] {
+	background: url('../_imagens/_icones/icone-login.png') left top no-repeat;
+} 
+.formatando-icones {
+	display: block;
+	width: 50px;
+	height: 47px;
+	text-indent: -9999px;
+}
+/*carrinho de compras*/
+#container-carrinho {
+	position: relative;
+}
+.carrinho {
+	background: url('../_imagens/_icones/carro.png') left top no-repeat;
+}
+#texto-carrinho {
+	display: none;
+}
+#numero-produtos {
+	display: block;
+	position: absolute;
+	top: 15px;
+	background-color: red;
+	border-radius: 10px;
+	padding: 4px;
+	right: 32px;
+	color: white;
+}
+/* Menu principal do cabeçalho*/
+#menu-principal {
+	border-top: 2px solid #0740ac;
+	border-bottom: 2px solid #0740ac;
+	margin-top: 5px;
+}
+@media (min-width: 390px) {
+	#menu-principal ul {
+		display: flex;
+		justify-content: center;
+	}
+}	
+#menu-principal ul li a {
+	text-transform: uppercase;
+}
+.tamanho-mcliente {
+	max-width: 260px;
+}
+#menu-principal li {
+	padding: 5px;
+}
+#menu-principal li:hover {
+	border-radius: 10px;
+	background-color: #0082B5;
+	transition: 1s;
+}
+#menu-principal li a:hover {
+	color: white;
+}
+#procurar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+#search {
+	border-radius: 4px;
+	height: 30px;
+	width: 95%;
+}
+/* Slider */
+.slider figure img {
+	width: 100%;
+	height: 100%;
+	
+}
+.slider figure {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+	background-color: #606060;
+}
+.slider figure figcaption {
+	display: none;
+}
+.fundo-titulo {
+	background-color: #0740ac;
+	padding: 10px;
+	color: white;
+	border-radius: 10px;
+	margin: 0;
+}
+/* Promoção */
+.preco {
+	color: red;
+}
+.corte {
+	text-decoration: line-through;
+	color: #606060;
+}
+#img-promocao {
+	width: 90%;
+	margin-top: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+ol li {
+	width: 150px;
+	height: 230px;
+	margin: auto;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 30px auto 30px auto;
+}
+ol li a h1 {
+	text-align: center;
+	color: black;
+}
+ol li a p {
+	text-align: center;
+	color: #666;
+	margin-top: 2px;
+}
+#passador {
+	clear: both;
+}
+@media (min-width: 500px) {
+	ol li {
+		margin-left: 10px;
+		margin-right: 10px;
+		float: left;
+	}
+}
+@media (min-width: 566px) {
+	.lista {
+		width: 70%;
+	}
+}
+@media (min-width: 640px) {
+	.lista {
+		width: 65%;
+	}
+}
+/* Rodapé */
+footer a, footer p {
+	color: black;	
+}
+.rodape {
+	clear: both;
+	background: #D8D8D8;
+	position: relative;
+	padding: 20px;
+}
+.div-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.titulo-rodape {
+	font-size: 1.253em;
+	background: url('../_imagens/_icones/ponto-verde.png') left no-repeat;
+	text-indent: 10px;
+}
+.largura-section-rodape {
+	width: 170px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.largura-section-rodape ul li {
+	margin: 10px;
+}
+.largura-section-rodape p {
+	margin: 10px;
+}
+.copy {
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	margin-left: -86px;
+}
+.div-footer {
+	height: 40px;
+	border-top: 2px solid white;
+	padding: 10px;
+}
+.logo-rodape {
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	margin-left: -100px;
+}

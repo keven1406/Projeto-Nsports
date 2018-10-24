@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+	<head>
+		<title>Suporte Online</title>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width"/>
+		<link rel = "stylesheet" href = "_css/reset.css"/>
+		<link rel = "stylesheet" href = "_css/estilo.css" media = "screen"/>
+		<link rel = "stylesheet" href = "_css/mobile-um.css" media = "(min-width:700px)"/>
+		<style>
+			#corpo {
+				display: flex;
+				justify-content: center;
+				margin-bottom: 10px;
+				margin-top: 10px;
+			}
+			#chat {
+				width: 500px;
+				height: 350px;
+				border: 2px solid black;
+				padding: 5px;
+				background: #479ecf;
+			}
+			#historico {
+				width: 99%;
+				height: 260px;
+				border: 2px solid black;
+				margin-bottom: 5px;
+				background: white;
+			}
+			#texto {
+				width: 99%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
+
+	</head>
+	<body>
+		<header class = "cabecalho">
+			<div class = "container tamanho div-cabecalho">
+				<h1><a href = "index.html"><img src = "_imagens/logo.png" alt = "NSports"/></a></h1>
+				<nav>
+					<h1 id = "menu">Menu do Usuário</h1>
+					<ul class = "container tamanho-mcliente">
+						<li><a href = "fale-conosco.html" class = "formatando-icones">Fale conosco</a></li>
+						<li><a href = "ajuda.html" class = "formatando-icones">Ajuda</a></li>
+						<li><a href = "login.html" class = "formatando-icones">Log in</a></li>
+						<li id = "container-carrinho">
+							<a href = "carrinho.html">
+								<p  class = "carrinho formatando-icones">Carrinho de compras</p>
+								<p><span id = "texto-carrinho">Número de produtos: </span><span id = "numero-produtos">0</span></p>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<nav id = "menu-principal">
+				<div class = "container tamanho div-menu-principal">
+					<h1>Menu principal</h1>
+					<ul>
+						<li><a href = "index.html">Inicio</a></li>
+						<li><a href = "#">Masculinho</a></li>
+						<li><a href = "#">Feminino</a></li>
+						<li><a href = "#">Acessorios</a></li>
+					</ul>
+					<form action = "/nada" id = "procurar">
+						<input type = "search" name = "procurar" id = "search" placeholder = "Digite o produto"/>
+						<input type = "image" src = "_imagens/_icones/lupa.png" width = "30" height = "30" name = "Procurar" id = "lupa"/>
+					</form>
+				</div>
+			</nav>
+		</header>
+		<!-- Fim do cabeçalho -->
+
+		<div id = "corpo">
+			<section id = "chat">
+				<section id = "historico">
+					<p id = "texto-hitorico"></p>
+				</section>
+				<form>
+					<textarea cols = "30" rows = "3" id = "texto">
+
+					</textarea>
+					<button name = "Submit" id = "submit" onclick = "pegarTexto()"/>Enviar</button>
+				</form>
+			</section>
+		</div>
+		<!-- fim da section principal -->
+		<footer class = "rodape">
+			<h1 class = "logo-rodape"><img src = "_imagens/logo.png" alt = "NSports"/></h1>
+			<div class = "container div-section">
+				<section class = "largura-section-rodape">
+					<nav>
+						<h1 class = "titulo-rodape">Institucional</h1>
+						<ul>
+							<li><a href = "sobre.html">Sobre</a></li>
+							<li><a href = "trabalhe-conosco.html">Trabalhe conosco</a></li>
+							<li><a href = "imprensa.html">Imprensa</a></li>
+							<li><a href = "privacidade.html">Privacidade</a></li>
+						</ul>
+					</nav>
+				</section>
+				<section class = "largura-section-rodape">
+					<h1 class = "titulo-rodape">Antendimento</h1>
+					<p>Ho&shy;rá&shy;ri&shy;o: A par&shy;tir de 08:00 as 18:00. <br/> De Sé&shy;gun&shy;da a Sá&shy;ba&shy;do.</p>
+					<ul>
+						<li>Estado: Rio de Janeiro</li>
+						<li>Av: São Bernardos</li>
+						<li>Nº: 35</li>
+						<li>CEP: 00000-000</li>
+					</ul>
+				</section>
+				<section class = "largura-section-rodape">
+					<nav>
+						<h1 class = "titulo-rodape">Redes sociais</h1>
+						<nav>
+							<ul>
+								<li><a href = "#" target = "_blank">Facebook</a></li>
+								<li><a href = "#" target = "_blank">Twitter</a></li>
+								<li><a href = "#" target = "_blank">Github</a></li>
+								<li><a href = "#" target = "_blank">Youtube</a></li>
+							</ul>
+						</nav>
+					</nav>
+				</section>
+			</div>
+			<div class = "div-footer">
+				<p class = "copy">Copyright &copy; Elias Keven
+			</div>
+		</footer>
+		<!-- Fim do rodapé -->
+	</body>
+</html>
