@@ -41,17 +41,17 @@ a {
 	color: black;
 }
 #menu {
-	background: url("../img/_icones/menu2.png") left top;
+	background: url("../img/icones/menu2.png") left top;
 }
 /* Menu do Usuário */
 a[href*="fale-conosco.html"] {
-	background: url('../img/_icones/contato.png') left top no-repeat;
+	background: url('../img/icones/contato.png') left top no-repeat;
 }
 a[href*="ajuda.html"] {
-	background: url('../img/_icones/ajuda.png') left top no-repeat;
+	background: url('../img/icones/ajuda.png') left top no-repeat;
 }
 a[href*="login.html"] {
-	background: url('../img/_icones/icone-login.png') left top no-repeat;
+	background: url('../img/icones/icone-login.png') left top no-repeat;
 } 
 .formatando-icones {
 	display: block;
@@ -64,7 +64,7 @@ a[href*="login.html"] {
 	position: relative;
 }
 .carrinho {
-	background: url('../img/_icones/carro.png') left top no-repeat;
+	background: url('../img/icones/carro.png') left top no-repeat;
 }
 #texto-carrinho {
 	display: none;
@@ -211,7 +211,7 @@ footer a, footer p {
 }
 .titulo-rodape {
 	font-size: 1.253em;
-	background: url('../img/_icones/ponto-verde.png') left no-repeat;
+	background: url('../img/icones/ponto-verde.png') left no-repeat;
 	text-indent: 10px;
 }
 .largura-section-rodape {
