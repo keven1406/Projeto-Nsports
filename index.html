@@ -4,14 +4,14 @@
 		<title>NSports | Roupas Masculinas, Femininas e acessorios</title>
 		<meta charset = "UTF-8"/>
 		<meta name = "viewport" content = "width=device-width"/>
-		<link rel = "stylesheet" href = "./_css/reset.css"/>
-		<link rel = "stylesheet" href = "./_css/estilo.css" media = "screen"/>
-		<link rel = "stylesheet" href = "./_css/mobile-um.css" media = "(min-width:700px)"/>
+		<link rel = "stylesheet" href = "./public/css/reset.css"/>
+		<link rel = "stylesheet" href = "./public/css/estilo.css" media = "screen"/>
+		<link rel = "stylesheet" href = "./public/css/mobile-um.css" media = "(min-width:700px)"/>
 	</head>
 	<body>
 		<header class = "cabecalho">
 			<div class = "container tamanho div-cabecalho">
-				<h1><a href = "index.html"><img src = "_imagens/logo.png" alt = "NSports"/></a></h1>
+				<h1><a href = "index.html"><img src = "./public/img/logo.png" alt = "NSports"/></a></h1>
 				<nav>
 					<h1 id = "menu">Menu do Usuário</h1>
 					<ul class = "container tamanho-mcliente">
@@ -38,7 +38,7 @@
 					</ul>
 					<form action = "/nada" id = "procurar">
 						<input type = "search" name = "procurar" id = "search" placeholder = "Digite o produto"/>
-						<input type = "image" src = "_imagens/_icones/lupa.png" width = "30" height = "30" name = "Procurar" id = "lupa"/>
+						<input type = "image" src = "./public/img/_icones/lupa.png" width = "30" height = "30" name = "Procurar" id = "lupa"/>
 					</form>
 				</div>
 			</nav>
@@ -46,7 +46,7 @@
 		<!-- Fim do cabeçalho -->
 		<section class = "slider">
 			<figure>
-				<img src = "_imagens/ginasta-slider.jpg"  id = "imagem-slid"/>
+				<img src = "./public/img/ginasta-slider.jpg"  id = "imagem-slid"/>
 				<figcaption>
 					<p>Roupas esportivas em Geral</p>
 				</figcaption>
@@ -60,7 +60,7 @@
 					if (contadora > imagens.length - 1)
 						contadora = 0;
 					var intervalo = setTimeout(function () {
-						document.getElementById("imagem-slid").src = "_imagens/" + imagens[contadora].image;
+						document.getElementById("imagem-slid").src = "./public/img/" + imagens[contadora].image;
 						return escolhendo(contadora + 1);
 					}, 10000);
 				}
@@ -78,7 +78,7 @@
 						<li>
 							<a href = "produtos">
 								<figure>
-									<img src = "_imagens/mulher-preto.jpg"/>
+									<img src = "./public/img/mulher-preto.jpg"/>
 									<figcaption>
 										<h1>Rashguard Pretorian Feminina Cropped Logo</h1>
 										<p><span class = "preco">R$ 80,00</span></p>
@@ -89,7 +89,7 @@
 						<li>
 							<a href = "produtos">
 								<figure>
-									<img src = "_imagens/calca-cinza.jpg"/>
+									<img src = "./public/img/calca-cinza.jpg"/>
 									<figcaption>
 										<h1>Calça Moletom Confort Mama Latina</h1>
 										<p><span class = "preco">R$ 89,90</span></p>
@@ -100,7 +100,7 @@
 						<li>
 							<a href = "produtos">
 								<figure>
-									<img src = "_imagens/homem-casaco.jpg"/>
+									<img src = "./public/img/homem-casaco.jpg"/>
 									<figcaption>
 										<h1>Jaqueta São Paulo Polyponge</h1>
 										<p><span class = "preco">R$ 199,90</span></p>
@@ -110,7 +110,7 @@
 						</li><li>
 							<a href = "produtos">
 								<figure>
-									<img src = "_imagens/camisa-branca.jpg"/>
+									<img src = "./public/img/camisa-branca.jpg"/>
 									<figcaption>
 										<h1>Camiseta Adidas Sequentials Branca</h1>
 										<p><span class = "preco">R$ 31,92</span></p>
@@ -121,7 +121,7 @@
 						<li>
 							<a href = "produtos">
 								<figure>
-									<img src = "_imagens/tenis-preto.jpg"/>
+									<img src = "./public/img/tenis-preto.jpg"/>
 									<figcaption>
 										<h1>Tênis Nike Air max the Feminino</h1>
 										<p><span class = "preco">R$ 379,90</span></p>
@@ -132,7 +132,7 @@
 						<li>
 							<a href = "produtos">
 								<figure>
-									<img src = "_imagens/joelheira-preta.jpg"/>
+									<img src = "./public/img/joelheira-preta.jpg"/>
 									<figcaption>
 										<h1>Joelheira Kestal Ajustável Com Reforço Patelar</h1>
 										<p><span class = "preco">R$ 53,90</span></p>
@@ -150,14 +150,14 @@
 					<h1 class = "fundo-titulo">Promoções</h1>
 				</header>
 				<figure>
-					<img src = "_imagens/promocao.png" alt = "Promoção!!! Tudo com desconto até 20%" id = "img-promocao"/>
+					<img src = "./public/img/promocao.png" alt = "Promoção!!! Tudo com desconto até 20%" id = "img-promocao"/>
 				</figure>
 				<div class = "lista container">
 					<ol>
 						<li>
 							<a href = "produtos.html">
 								<figure>
-									<img src = "_imagens/pulseira-preta.jpg"/>
+									<img src = "./public/img/pulseira-preta.jpg"/>
 									<figcaption>
 										<h1>Marine - Black Series</h1>
 										<p>De <span class = "corte">R$ 38,90</span><br/> por <span class = "preco">R$ 30,00</span></p>
@@ -168,7 +168,7 @@
 						<li>
 							<a href = "produtos.html">
 								<figure>
-									<img src = "_imagens/relogio-preto.jpg"/>
+									<img src = "./public/img/relogio-preto.jpg"/>
 									<figcaption>
 										<h1>Relógio Skmei Anadigi 1033 PT</h1>
 										<p>De <span class = "corte">R$ 121,5</span><br/> por <span class = "preco">R$ 110,55</class></p>
@@ -179,7 +179,7 @@
 						<li>
 							<a href = "produtos.html">
 								<figure>
-									<img src = "_imagens/camiseta-gonew1.jpg"/>
+									<img src = "./public/img/camiseta-gonew1.jpg"/>
 									<figcaption>
 										<h1>Camiseta GONEW Lola Basic</h1>
 										<p>De <span class = "corte">R$ 49,90</span><br/> por <span class = "preco">R$ 29,90</span></p>
@@ -190,7 +190,7 @@
 						<li>
 							<a href = "produtos.html">
 								<figure>
-									<img src = "_imagens/camiseta-nike1.jpg"/>
+									<img src = "./public/img/camiseta-nike1.jpg"/>
 									<figcaption>
 										<h1>Camiseta Nike Signal Logo Feminina</h1>
 										<p>De R$ <span class = "corte">129,90</span><br/> por <span class = "preco">R$ 89,90</span></p>
@@ -201,7 +201,7 @@
 						<li>
 							<a href = "produtos.html">
 								<figure>
-									<img src = "_imagens/camisa-sport1.jpg"/>
+									<img src = "./public/img/camisa-sport1.jpg"/>
 									<figcaption>
 										<h1>Camisa Adidas Sport Recife</h1>
 										<p>De <span class = "corte">R$ 249,90</span><br/> por <span class = "preco">R$ 179,90</span></p>
@@ -212,7 +212,7 @@
 							<li>
 							<a href = "produtos.html">
 								<figure>
-									<img src = "_imagens/bone-preto1.jpg"/>
+									<img src = "./public/img/bone-preto1.jpg"/>
 									<figcaption>
 										<h1>Boné "n" preto</h1>
 										<p>De <span class = "corte">R$ 29,99</span><br/> por <span class = "preco">20,00</span></p>
@@ -226,7 +226,7 @@
 		</div>	
 		<!-- fim da section principal -->
 		<footer class = "rodape">
-			<h1 class = "logo-rodape"><img src = "_imagens/logo.png" alt = "NSports"/></h1>
+			<h1 class = "logo-rodape"><img src = "./public/img/logo.png" alt = "NSports"/></h1>
 			<div class = "container div-section">
 				<section class = "largura-section-rodape">
 					<nav>
