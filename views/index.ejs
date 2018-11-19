@@ -1,0 +1,262 @@
+	<% include head %>
+
+		<header class = "cabecalho">
+			<div class = "container tamanho div-cabecalho">
+				<h1><a href = "index.html"><img src = "/img/logo.png" alt = "NSports"/></a></h1>
+				<nav>
+					<h1 id = "menu">Menu do Usuário</h1>
+					<ul class = "container tamanho-mcliente">
+						<li><a href = "fale-conosco.html" class = "formatando-icones">Fale conosco</a></li>
+						<li><a href = "ajuda.html" class = "formatando-icones">Ajuda</a></li>
+						<li><a href = "login.html" class = "formatando-icones">Log in</a></li>
+						<li id = "container-carrinho">
+							<a href = "carrinho.html">
+								<p  class = "carrinho formatando-icones">Carrinho de compras</p>
+								<p><span id = "texto-carrinho">Número de produtos: </span><span id = "numero-produtos">0</span></p>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<nav id = "menu-principal">
+				<div class = "container tamanho div-menu-principal">
+					<h1>Menu principal</h1>
+					<ul>
+						<li><a href = "index.html">Inicio</a></li>
+						<li><a href = "masculino.html">Masculino</a></li>
+						<li><a href = "feminino.html">Feminino</a></li>
+						<li><a href = "acessorios.html">Acessorios</a></li>
+					</ul>
+					<form action = "/nada" id = "procurar">
+						<input type = "search" name = "procurar" id = "search" placeholder = "Digite o produto"/>
+						<input type = "image" src = "/img/icones/lupa.png" width = "30" height = "30" name = "Procurar" id = "lupa"/>
+					</form>
+				</div>
+			</nav>
+		</header>
+		<!-- Fim do cabeçalho -->
+		<section class = "slider">
+			<figure>
+				<img src = "/img/ginasta-slider.jpg"  id = "imagem-slid"/>
+				<figcaption>
+					<p>Roupas esportivas em Geral</p>
+				</figcaption>
+			</figure>
+			<script>
+				var imagens = [
+								{image: "homem-bola.jpg"},
+								{image: "ginasta-slider.jpg"}
+							];
+				function escolhendo(contadora) {
+					if (contadora > imagens.length - 1)
+						contadora = 0;
+					var intervalo = setTimeout(function () {
+						document.getElementById("imagem-slid").src = "/img/" + imagens[contadora].image;
+						return escolhendo(contadora + 1);
+					}, 10000);
+				}
+				escolhendo(0);
+			</script>
+		</section>
+		<!-- Fim da section slider -->
+		<div class = "container tamanho">
+			<section>
+				<header>
+					<h1 class = "fundo-titulo">Produtos em destaque</h1>
+				</header>
+				<div class = "lista container">
+					<ol>
+						<li>
+							<a href = "produtos">
+								<figure>
+									<img src = "/img/mulher-preto.jpg"/>
+									<figcaption>
+										<h1>Rashguard Pretorian Feminina Cropped Logo</h1>
+										<p><span class = "preco">R$ 80,00</span></p>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href = "produtos">
+								<figure>
+									<img src = "/img/calca-cinza.jpg"/>
+									<figcaption>
+										<h1>Calça Moletom Confort Mama Latina</h1>
+										<p><span class = "preco">R$ 89,90</span></p>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href = "produtos">
+								<figure>
+									<img src = "/img/homem-casaco.jpg"/>
+									<figcaption>
+										<h1>Jaqueta São Paulo Polyponge</h1>
+										<p><span class = "preco">R$ 199,90</span></p>
+									</figcaption>
+								</figure>
+							</a>
+						</li><li>
+							<a href = "produtos">
+								<figure>
+									<img src = "/img/camisa-branca.jpg"/>
+									<figcaption>
+										<h1>Camiseta Adidas Sequentials Branca</h1>
+										<p><span class = "preco">R$ 31,92</span></p>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href = "produtos">
+								<figure>
+									<img src = "/img/tenis-preto.jpg"/>
+									<figcaption>
+										<h1>Tênis Nike Air max the Feminino</h1>
+										<p><span class = "preco">R$ 379,90</span></p>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href = "produtos">
+								<figure>
+									<img src = "/img/joelheira-preta.jpg"/>
+									<figcaption>
+										<h1>Joelheira Kestal Ajustável Com Reforço Patelar</h1>
+										<p><span class = "preco">R$ 53,90</span></p>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<div id = "passador"></div>
+					</ol>
+				</div>
+			</section>
+			<!-- Fim da section Produtos em destaque -->
+			<section class = "promocao">
+				<header>
+					<h1 class = "fundo-titulo">Promoções</h1>
+				</header>
+				<figure>
+					<img src = "/img/promocao.png" alt = "Promoção!!! Tudo com desconto até 20%" id = "img-promocao"/>
+				</figure>
+				<div class = "lista container">
+					<ol>
+						<li>
+							<a href = "produtos.html">
+								<figure>
+									<img src = "/img/pulseira-preta.jpg"/>
+									<figcaption>
+										<h1>Marine - Black Series</h1>
+										<p>De <span class = "corte">R$ 38,90</span><br/> por <span class = "preco">R$ 30,00</span></p>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href = "produtos.html">
+								<figure>
+									<img src = "/img/relogio-preto.jpg"/>
+									<figcaption>
+										<h1>Relógio Skmei Anadigi 1033 PT</h1>
+										<p>De <span class = "corte">R$ 121,5</span><br/> por <span class = "preco">R$ 110,55</class></p>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href = "produtos.html">
+								<figure>
+									<img src = "/img/camiseta-gonew1.jpg"/>
+									<figcaption>
+										<h1>Camiseta GONEW Lola Basic</h1>
+										<p>De <span class = "corte">R$ 49,90</span><br/> por <span class = "preco">R$ 29,90</span></p>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href = "produtos.html">
+								<figure>
+									<img src = "/img/camiseta-nike1.jpg"/>
+									<figcaption>
+										<h1>Camiseta Nike Signal Logo Feminina</h1>
+										<p>De R$ <span class = "corte">129,90</span><br/> por <span class = "preco">R$ 89,90</span></p>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href = "produtos.html">
+								<figure>
+									<img src = "/img/camisa-sport1.jpg"/>
+									<figcaption>
+										<h1>Camisa Adidas Sport Recife</h1>
+										<p>De <span class = "corte">R$ 249,90</span><br/> por <span class = "preco">R$ 179,90</span></p>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+							<li>
+							<a href = "produtos.html">
+								<figure>
+									<img src = "/img/bone-preto1.jpg"/>
+									<figcaption>
+										<h1>Boné "n" preto</h1>
+										<p>De <span class = "corte">R$ 29,99</span><br/> por <span class = "preco">20,00</span></p>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+					</ol>
+				</div>
+			</section>
+		</div>	
+		<!-- fim da section principal -->
+		<footer class = "rodape">
+			<h1 class = "logo-rodape"><img src = "/img/logo.png" alt = "NSports"/></h1>
+			<div class = "container div-section">
+				<section class = "largura-section-rodape">
+					<nav>
+						<h1 class = "titulo-rodape">Institucional</h1>
+						<ul>
+							<li><a href = "sobre.html">Sobre</a></li>
+							<li><a href = "trabalhe-conosco.html">Trabalhe conosco</a></li>
+							<li><a href = "imprensa.html">Imprensa</a></li>
+							<li><a href = "privacidade.html">Privacidade</a></li>
+						</ul>
+					</nav>
+				</section>
+				<section class = "largura-section-rodape">
+					<h1 class = "titulo-rodape">Antendimento</h1>
+					<p>Ho&shy;rá&shy;ri&shy;o: A par&shy;tir de 08:00 as 18:00. <br/> De Sé&shy;gun&shy;da a Sá&shy;ba&shy;do.</p>
+					<ul>
+						<li>Estado: Rio de Janeiro</li>
+						<li>Av: São Bernardos</li>
+						<li>Nº: 35</li>
+						<li>CEP: 00000-000</li>
+					</ul>
+				</section>
+				<section class = "largura-section-rodape">
+					<nav>
+						<h1 class = "titulo-rodape">Redes sociais</h1>
+						<nav>
+							<ul>
+								<li><a href = "#" target = "_blank">Facebook</a></li>
+								<li><a href = "#" target = "_blank">Twitter</a></li>
+								<li><a href = "#" target = "_blank">Github</a></li>
+								<li><a href = "#" target = "_blank">Youtube</a></li>
+							</ul>
+						</nav>
+					</nav>
+				</section>
+			</div>
+			<div class = "div-footer">
+				<p class = "copy">Copyright &copy; Elias Keven
+			</div>
+		</footer>
+		<!-- Fim do rodapé -->
+	<% include footer %>
