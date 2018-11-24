@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+	<head>
+		<title>Administrar NSports</title>
+		<meta charset = 'UTF-8'>
+		<meta name="robots" content="noindex">
+	</head>
+	<body>
+		<header>
+			<h1>NSports</h1>
+			<nav>
+				<ul>
+					<li>CRIAR PRODUTOS</l1>
+					<li>EXCLUIR PRODUTOS</li>
+					<li>CRIAR PROMOÇÃO</li>
+					<li>ANUNCIOS</li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<img src = "#" id = "imagem-selecionada">
+			<form action = "#">
+				<label for = "nome-produto">Nome do produto:</label><input type = "text" name = "nome-produto" id = 'nome-produto'>
+				<label for = "foto">Foto:</label><input type = "file" id = "foto" name = "foto">
+				<script>
+					const foto = document.getElementById("foto")
+					const imagem = document.getElementById("imagem-selecionada")
+					if (foto.files && foto.files[0]) {
+						var reader = new FileReader()
+						
+						reader.onload = function(file) { 
+							console.log('oioioi')						
+								return function (e) {
+									console.log(e)
+							}
+						}
+					}
+				</script>
+				<label for = "cor">Cor:</label><input type = "input" name = "cor" id = "cor">
+				<label for = "preco">Preço do produto:</label><input type = "number" min = "0" id = "preco" name = "preco">
+				<label for = "estoque">Estoque:</label><input type = "number" min = "0" id = "estoque" name = "estoque">
+			</form>
+		</section>
+		<footer>
+			<h1>NSports</h1>
+		</footer>
+	</body>
+</html>
