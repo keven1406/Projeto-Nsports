@@ -50,7 +50,7 @@ a[href*="fale-conosco.html"] {
 a[href*="ajuda.html"] {
 	background: url('../img/icones/ajuda.png') left top no-repeat;
 }
-a[href*="login.html"] {
+a[href*="/v1/login"] {
 	background: url('../img/icones/icone-login.png') left top no-repeat;
 } 
 .formatando-icones {
