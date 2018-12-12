@@ -1,0 +1,23 @@
+		<% include _headlogin %>
+
+		<section class = "entrar container">
+			<h1>Entrar</h1>
+			<form action = "/v1/user" method = "get">
+				<div>
+					<label for = "user">Usuário</label><input type = "text" name = "username" id = "usuario" size = "30"/>
+				</div>
+				<div>
+					<label for = "password">Senha</label><input type = "password" name = "pasword" id = "senha" size = "30" maxlength = "16"/>
+				</div>
+				<input type = "submit" value = "Entrar" name = "Entrar" id = "submit"/>
+			</form>
+		</section>
+		<section class = "inscrever container">
+			<article>
+				<h1>Não sou inscrito</h1>
+				<p>Caso ainda não seja inscrito, clique no link abaixo para ser redirecionado para a página de inscrição</p>
+				<a href = "inscrever">Inscreva-se</a>
+			</article>
+		</section>
+
+		<% include footer %>
